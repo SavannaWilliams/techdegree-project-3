@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="container">
+    <header>
         <h1>THE CODE REVIEW</h1>
     </header>
 
     <div class="wrapper">
-        <main class="container">
+        <main>
             <div class="intro">
                 <h2>Signup for our newsletter</h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -24,9 +24,21 @@
                 </div>
             </div><!-- END intro -->
 
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name">
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_email">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone">
+                </fieldset>
+            </form>
+
         </main>
 
-        <footer class="container">
+        <footer>
             <p>Copyright The Code Review</p>
         </footer>
     </div><!-- END wrapper -->
