@@ -95,6 +95,21 @@ select {
     padding: 0 15px;
 }
 
+/* Fakes placeholder color */
+select {
+    color: gray;
+}
+
+/* Removes placeholder color from non-placeholder options before actual valid selection. */
+select option:not(.default) {
+    color: black;
+}
+
+/* Removes placeholder color from closed select box after selection is made. Select must have 'required' attribute for validation. */
+select:valid {
+    color: black;
+}
+
 /* ================================= 
   Media Query
 ==================================== */
