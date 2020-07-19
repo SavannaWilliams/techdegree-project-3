@@ -1,0 +1,73 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', "Palatino Linotype", "Book Antiqua", serif;
+
+}
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+.container {
+    text-align: center;
+}
+
+header {
+    background: #2d3945;
+    color: white;
+    height: 70px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+footer p {
+    color: gray;
+    font-style: italic;
+    font-size: .8rem;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.intro {
+    padding: 20px 0;
+}
+
+.double-hr {
+    padding-top: 20px;
+}
+
+.double-hr hr:first-child {
+    border: 4px solid black;
+}
+
+.double-hr hr:last-child {
+    border: 2px solid black;
+}
+
+
+/* ================================= 
+  Media Query
+==================================== */
+
+/* @media only screen and (min-width: 768px) {
+
+} */
