@@ -26,6 +26,7 @@
 
             <form action="index.html" method="post">
                 <fieldset class="contact">
+                    <!-- Text fields -->
                     <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="user_name">
@@ -38,6 +39,7 @@
                     <label for="city">City</label>
                     <input type="text" id="city" name="user_city">
                     <label for="state">State</label>
+                    <!-- Select dropdown -->
                     <select id="state" name="user_state" required>
                         <option value="" disabled selected class="default">Choose State</option>
                         <option value="Alabama">Alabama</option>
@@ -91,12 +93,14 @@
                         <option value="Wisconsin">Wisconsin</option>
                         <option value="Wyoming">Wyoming</option>
                     </select>
+                    <!-- Text field -->
                     <label for="zip-code">Zip Code</label>
                     <input type="text" id="zip-code" name="user_zip-code">
                     <hr>
-                </fieldset>
+                </fieldset> <!-- END contact fieldset -->
                 <fieldset class="newsletter">
                     <legend>Newsletter</legend>
+                    <!-- Checkboxes -->
                     <label class="desc-label">Select the newsletters you would like to receive</label>
                     <input type="checkbox" id="html-news" value="html news" name="user_newsletter">
                     <label class="inline-label" for="html-news">HTML News</label><br>
@@ -110,9 +114,12 @@
                     <label class="inline-label" for="html">HTML</label><br>
                     <input type="radio" id="plain-text" value="plain text" name="user_newsletter-format">
                     <label class="inline-label" for="plain-text">Plain text</label>
-                </fieldset>
+                    <!-- Text area field -->
+                    <label class="desc-label">Other topics you'd like to hear about</label>
+                    <textarea id="other-topics" name="other-topics"></textarea>
+                </fieldset> <!-- END newsletter fieldset -->
+                <button type="submit">Sign Up</button>
             </form>
-
         </main>
 
         <footer>
