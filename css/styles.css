@@ -73,17 +73,22 @@ footer p {
 fieldset {
     border: none;
 }
-
-legend {
+.contact {
+    padding-bottom: 20px;
+}
+.contact legend {
     font-weight: 700;
     padding-bottom: 25px;
 }
 
 label {
     text-align: left;
+    display: block;
 }
 
-input,
+input[type=text],
+input[type=email],
+input[type=tel],
 select {
     display: block;
     height: 50px;
@@ -93,6 +98,19 @@ select {
     background-color: #f2eff2;
     margin: 12px auto 25px auto;
     padding: 0 15px;
+}
+
+.desc-label {
+    margin: 25px auto;
+}
+
+.inline-label {
+    display: inline;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 0 auto 20px auto;
 }
 
 /* Fakes placeholder color */
