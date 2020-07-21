@@ -100,7 +100,7 @@ input[type=email],
 input[type=tel],
 select {
     display: block;
-    height: 55px;
+    height: 56px;
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -142,6 +142,14 @@ select:valid {
     color: black;
 }
 
+.newsletter label:not(.desc-label) {
+    padding-left: 10px;
+}
+
+#mid-hr {
+    margin-bottom: 40px;
+}
+
 input[type=radio],
 input[type=checkbox] {
     margin: 0 auto 20px auto;
@@ -155,6 +163,7 @@ textarea {
     border: none;
     background-color: #f2eff2;
     padding: 5px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -177,19 +186,27 @@ button {
         width: 50%;
     }
 
-    input[type=text],
-    input[type=email],
-    input[type=tel] {
-        display: inline;
-        width: 80%;
-    }
-
-    label {
-        display: inline;
-        margin-right: 30px;
+    .contact input,
+    .contact select {
+        width: 75%;
+        float: left;
     }
 
     #zip-code {
         width: 25%;
     }
+
+    .contact label {
+        width: 25%;
+        float: left;
+        margin-top: 28px;
+        padding-right: 10px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
 }
