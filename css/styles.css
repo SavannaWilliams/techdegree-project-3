@@ -78,6 +78,8 @@ footer p {
 .form-group-news {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 7px 0;
 }
 
 
