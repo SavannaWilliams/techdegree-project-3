@@ -24,7 +24,8 @@
                 </div>
             </div><!-- END intro -->
 
-            <form action="index.html" method="post" >
+            <form action="index.html" method="post">
+                <!-- Contact fieldset -->
                 <fieldset class="contact clearfix">
                     <!-- Text fields -->
                     <legend>Contact Information</legend>
@@ -38,7 +39,7 @@
                     </div>
                     <div class="form-group-contact">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        <input type="tel" id="phone" name="user_phone" placeholder="123-456-7890">
                     </div>
                     <div class="form-group-contact">
                         <label for="street">Street Address</label>
@@ -108,10 +109,11 @@
                     <!-- Zip code text field -->
                     <div class="form-group-contact">
                         <label for="zip-code">Zip Code</label>
-                        <input type="text" id="zip-code" name="user_zip-code" placeholder="Your zip code">
+                        <input type="text" id="zip-code" name="user_zip-code" placeholder="#####">
                     </div>
                 </fieldset> <!-- END contact fieldset -->
                 <hr id="mid-hr">
+                <!-- Newsletter fieldset -->
                 <fieldset class="newsletter">
                     <legend>Newsletter</legend>
                     <!-- Checkboxes -->
@@ -140,7 +142,7 @@
                     </div>
                     <!-- Text area field -->
                     <label class="desc-label">Other topics you'd like to hear about</label>
-                    <textarea id="other-topics" name="other-topics" placeholder="Your ideas..."></textarea>
+                    <textarea id="comment" name="comment" placeholder="Your comments..."></textarea>
                 </fieldset> <!-- END newsletter fieldset -->
                 <button type="submit">Sign Up</button>
             </form>
