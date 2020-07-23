@@ -28,27 +28,27 @@
                 <fieldset class="contact clearfix">
                     <!-- Text fields -->
                     <legend>Contact Information</legend>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="user_name" placeholder="Required" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="user_email" placeholder="Required" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="street">Street Address</label>
                         <input type="text" id="street" name="user_street" placeholder="Your Street Address">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="city">City</label>
                         <input type="text" id="city" name="user_city" placeholder="Your City">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group-contact">
                     <label for="state">State</label>
                     <!-- Select dropdown -->
                         <select id="state" name="user_state">
@@ -106,7 +106,7 @@
                         </select>
                     </div>
                     <!-- Zip code text field -->
-                    <div class="form-group">
+                    <div class="form-group-contact">
                         <label for="zip-code">Zip Code</label>
                         <input type="text" id="zip-code" name="user_zip-code" placeholder="Your zip code">
                     </div>
@@ -116,18 +116,28 @@
                     <legend>Newsletter</legend>
                     <!-- Checkboxes -->
                     <label class="desc-label">Select the newsletters you would like to receive</label>
-                    <input type="checkbox" id="html-news" value="html news" name="user_newsletter">
-                    <label class="inline-label" for="html-news">HTML News</label><br>
-                    <input type="checkbox" id="css-news" value="css news" name="user_newsletter">
-                    <label class="inline-label" for="css-news">CSS News</label><br>
-                    <input type="checkbox" id="js-news" value="javascript news" name="user_newsletter">
-                    <label class="inline-label" for="js-news">Javascript News</label>
+                    <div class="form-group-news">
+                        <input type="checkbox" id="html-news" value="html news" name="user_newsletter">
+                        <label class="inline-label" for="html-news">HTML News</label>
+                    </div>
+                    <div class="form-group-news">
+                        <input type="checkbox" id="css-news" value="css news" name="user_newsletter">
+                        <label class="inline-label" for="css-news">CSS News</label>
+                    </div>
+                    <div class="form-group-news">
+                        <input type="checkbox" id="js-news" value="javascript news" name="user_newsletter">
+                        <label class="inline-label" for="js-news">Javascript News</label>
+                    </div>
                     <!-- Radio buttons -->
                     <label class="desc-label">Newsletter format</label>
-                    <input type="radio" id="html" value="html" name="user_newsletter-format">
-                    <label class="inline-label" for="html">HTML</label><br>
-                    <input type="radio" id="plain-text" value="plain text" name="user_newsletter-format">
-                    <label class="inline-label" for="plain-text">Plain text</label>
+                    <div class="form-group-news">
+                        <input type="radio" id="html" value="html" name="user_newsletter-format">
+                        <label class="inline-label" for="html">HTML</label>
+                    </div>
+                    <div class="form-group-news">
+                        <input type="radio" id="plain-text" value="plain text" name="user_newsletter-format">
+                        <label class="inline-label" for="plain-text">Plain text</label>
+                    </div>
                     <!-- Text area field -->
                     <label class="desc-label">Other topics you'd like to hear about</label>
                     <textarea id="other-topics" name="other-topics" placeholder="Your ideas..."></textarea>

@@ -66,9 +66,14 @@ footer p {
     border: 4px solid black;
 }
 
-.form-group {
+.form-group-contact {
     display: flex;
     flex-direction: column;
+}
+
+.form-group-news {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -80,8 +85,11 @@ fieldset {
     padding-bottom: 20px;
 }
 
-.contact legend {
+legend {
     font-weight: 700;
+}
+
+.contact legend {
     padding-bottom: 25px;
 }
 
@@ -95,7 +103,7 @@ label {
 }
 
 .inline-label {
-    display: inline;
+    align-self: flex-start;
 }
 
 input[type=text],
@@ -143,11 +151,6 @@ input:focus {
     margin-bottom: 40px;
 }
 
-input[type=radio],
-input[type=checkbox] {
-    margin: 0 auto 20px auto;
-}
-
 textarea {
     display: block;
     min-height: 100px;
@@ -179,16 +182,17 @@ button {
         width: 50%;
     }
 
-    .form-group {
+    .form-group-contact {
         flex-direction: row;
         align-items: center;
     }
 
-    .form-group label,
+    .form-group-contact label,
     #zip-code label {
         min-width: 115px;
         margin-right: 20px;
     }
+
 
     #zip-code {
         width: 30%;
