@@ -141,23 +141,20 @@ textarea::placeholder {
     color: #bebebe;
 }
 
-input {
+input,
+textarea,
+select {
     transition: transform .4s ease-in-out;
 }
 
-input:focus {
+input:focus,
+textarea:focus,
+select:focus {
     /* Box-shadow required to maintain border radius. With outline only, it's too square. Both required to override browser defaults. */
     outline: #2d3945;
     box-shadow: 0 0 0 2px #2d3945;
     background-color: #fff;
     transform: scale(1.02);
-}
-
-textarea:focus,
-select:focus {
-    outline: #2d3945;
-    box-shadow: 0 0 0 2px #2d3945;
-    background-color: #fff;
 }
 
 .newsletter label:not(.desc-label) {
