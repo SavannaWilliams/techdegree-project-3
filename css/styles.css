@@ -66,17 +66,20 @@ footer p {
     border: 4px solid black;
 }
 
-#zip-code {
-    width: 50%;
-    margin: 12px auto 25px 0;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
+
 
 fieldset {
     border: none;
 }
+
 .contact {
     padding-bottom: 20px;
 }
+
 .contact legend {
     font-weight: 700;
     padding-bottom: 25px;
@@ -127,23 +130,13 @@ input:focus {
     box-shadow: 0 0 0 2px black;/* Use box-shadow instead of outline, because outline creates 0px border radius. */
 }
 
-/* Fakes Select dropdwon placeholder color */
-select {
-    color: gray;
-}
-
-/* Removes select placeholder color from non-placeholder options before actual valid selection. */
-select option:not(.default) {
-    color: black;
-}
-
-/* Removes select placeholder color from closed select box after selection is made. Select must have 'required' attribute for validation. */
-select:valid {
-    color: black;
-}
-
 .newsletter label:not(.desc-label) {
     padding-left: 10px;
+}
+
+#zip-code {
+    width: 50%;
+    margin: 12px auto 25px 0;
 }
 
 #mid-hr {
@@ -187,7 +180,6 @@ button {
     }
 
     .form-group {
-        display: flex;
         flex-direction: row;
         align-items: center;
     }
